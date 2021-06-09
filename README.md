@@ -3,7 +3,7 @@ A python script with GUI made to visualize different types of fractals
 
 ## Installation
 ### Dependencies 
-1. OpenCV2,
+1. OpenCV2
 2. Colorsys
 3. Numpy
 4. Scipy
@@ -71,3 +71,17 @@ Supppose you wish to create an animation of the Mandelbrot set, on the complex n
 The end result will be a series of 500 images. Using another script, I have made them into a gif:
 
 ![Mandelbrot Zoom](./images/MandelbrotZoom.gif)
+
+Of course, feel free to change the parameters to your heart's desire! By changing the coordinate, it is possible to make some very entracing images! I've done my best to reduce the limitations that you have to create the kind of fractal image you want. I will be working on adding more features to it in the future. Until then, I hope you enjoy!
+
+## Creating GIFs 
+Using the `gifMaker.py` script, it is possible to create a gif of the images created using the program. In order to create the right GIF, you will need to run the file using your terminal. From the same directory as the main script, run 
+```sh
+python3 gifMaker.py
+```
+or
+```sh
+python gifMaker.py
+```
+
+The resulting GIF should appear in the same directory as the scripts.
