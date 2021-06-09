@@ -57,13 +57,17 @@ Furthermore, due to limitations with my programming skills, you only get 3 attem
 
 ### Examples 
 Suppose you wish to create a 2000 by 3000 pixel image, which shows the burning ship fractal with 9.6x zoom at the complex number -1.575 + 0.018i, using the smooth coloring method. This would create an image like this: 
+
 ![Burhing Ship](./images/BurningShip.png)
 
 The configuration for such an image would look like this:
-![Burning Ship COnfig](./images/BurningShipConfig.png)
+
+![Burning Ship Config](./images/BurningShipConfig.png)
 
 Supppose you wish to create an animation of the Mandelbrot set, on the complex number -1.47034+0i in the complex plane. This animation zooms in on this point, going from a zoom of 0 to 30, creating 500 images for a very smooth animation. The resolution of each image is 200 by 300 pixels, and the coloring method is naive escape to achieve a trance-like rainbow effect. The configuration for such an animation would be:
-![Mandelbrot COnfig](./images/MandelbrotConfig.png)
+
+![Mandelbrot Config](./images/MandelbrotCOnfig.png)
 
 The end result will be a series of 500 images. Using another script, I have made them into a gif:
+
 ![Mandelbrot Zoom](./images/MandelbrotZoom.gif)
