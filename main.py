@@ -322,7 +322,7 @@ if __name__ == '__main__':
             	sg.InputText(default_text = '200', size=(20,1), key='maxIt')], 
 
             [sg.Text("Fractal Type", size=(20,1)),
-            	sg.InputCombo(("Mandelbrot", "Burning Ship", "Julia Set"),
+            	sg.InputCombo(("Mandelbrot", "Burning Ship" ),
             	    size=(20,1), default_value= "Mandelbrot", key='fractalType', enable_events = True)],
             [sg.Text("Complex Parameter", size=(20,1)), 
                 sg.InputText(default_text = "1+5j", size=(20,1), key = 'complexParam', disabled=True)], 
