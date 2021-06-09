@@ -12,21 +12,23 @@ A python script with GUI made to visualize different types of fractals
 7. PIL
 
 Install them all using pip 
-
-`pip install opencv-python colorsys numpy scipy PySimpleGUI numba pillow`
-
-I found that just installing PySimpleGUI wasn't enough. In the case you get similar errors with PySimpleGUI not detecting Tkinter, try: 
-
-`pip install tk`
-  
-After the dependencies are installed, just clone the directory, cd into it, and run the script using 
-
-`python3 main.py`
+```sh
+pip install opencv-python colorsys numpy scipy PySimpleGUI numba pillow
+```
+In some cases, I've found that just installing PySimpleGUI isn't enough. In the case you get errors with PySimpleGUI not detecting Tkinter, try installing TKinter directly: 
+```sh
+pip install tk
+```
+After the dependencies are installed, just clone the directory, cd into the folder, and run the script using 
+```sh
+python3 main.py
+```
 or 
+```sh
+python main.py
+```
 
-`python main.py`
-
-This should show a GUI with which you can start generating your own fractal images!
+This should render a GUI with which you can start generating your own fractal images!
 
 ## Usage 
 ### Parameters 
@@ -54,8 +56,14 @@ After setting the required parameters, a folder called "Output" will be created 
 Furthermore, due to limitations with my programming skills, you only get 3 attempts to enter the right set of parameters. If you enter incorrect information (e.g. enter "a" for a zoom value) it will crash. I am working on a fix, but this shouldn't be that much of a problem. 
 
 ### Examples 
-Suppose you wish to create a 2000 by 3000 pixel image, which shows the burning ship fractal with large zoom at the complex number -1.575 + 0.019i in the copmlex plane, using the smooth coloring method. This would create an image like this (INSERT LINK). The configuration for such an image would look like this : 
+Suppose you wish to create a 2000 by 3000 pixel image, which shows the burning ship fractal with 9.6x zoom at the complex number -1.575 + 0.018i, using the smooth coloring method. This would create an image like this: 
+![Burhing Ship](./images/BurningShip.png)
 
-Supppose you wish to create an animation of the Mandelbrot set, on the complex number 1.5+0i in the complex plane. This animation zooms in on this point, going from a zoom of 0 to 18, creating 500 images for a very smooth animation. The resolution of each image is 200 by 300 pixels, and the coloring method is naive escape to achieve a trance-like rainbow effect. The configuration for such an animatio would be: 
+The configuration for such an image would look like this:
+![Burning Ship COnfig](./images/BurningShipConfig.png)
 
-and the end result will look like: 
+Supppose you wish to create an animation of the Mandelbrot set, on the complex number -1.47034+0i in the complex plane. This animation zooms in on this point, going from a zoom of 0 to 30, creating 500 images for a very smooth animation. The resolution of each image is 200 by 300 pixels, and the coloring method is naive escape to achieve a trance-like rainbow effect. The configuration for such an animation would be:
+![Mandelbrot COnfig](./images/MandelbrotConfig.png)
+
+The end result will be a series of 500 images. Using another script, I have made them into a gif:
+![Mandelbrot Zoom](./images/MandelbrotZoom.gif)
