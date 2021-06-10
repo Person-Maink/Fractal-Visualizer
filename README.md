@@ -4,16 +4,15 @@ A python script with GUI made to visualize different types of fractals
 ## Installation
 ### Dependencies 
 1. OpenCV2
-2. Colorsys
-3. Numpy
-4. Scipy
-5. PySimpleGUI
-6. Numba
-7. PIL
+2. Numpy
+3. Scipy
+4. PySimpleGUI
+5. Numba
+6. PIL
 
 Install them all using pip 
 ```sh
-pip install opencv-python colorsys numpy scipy PySimpleGUI numba pillow
+pip install opencv-python numpy scipy PySimpleGUI numba pillow
 ```
 In some cases, I've found that just installing PySimpleGUI isn't enough. In the case you get errors with PySimpleGUI not detecting Tkinter, try installing TKinter directly: 
 ```sh
